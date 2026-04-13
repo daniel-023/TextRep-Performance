@@ -1,7 +1,7 @@
-# Offensive Speech Detection
+# Offensive Speech Classification
 
 ## Project Introduction
-This project focuses on comparing the performance of three different vectorisation methods (TF-IDF, Word2Vec, and Sentence Transformers) on a binary classification task (offensive speech vs. non-offensive speech). The performance of these vectorisation methods is evaluated using three different classifiers: Logistic Regression, Support Vector Machine (SVM), and Random Forest using the Scikit-learn library. 
+This project compares three text representation methods (TF-IDF, Word2Vec, and Sentence Transformers) on a binary classification task (offensive speech vs non-offensive speech). Performance is evaluated using three machine learning classifiers: Logistic Regression, Support Vector Machine (SVM), and Random Forest with the Scikit-learn library. 
 
 ## Data
 - 8326 manually labelled tweets  
@@ -38,15 +38,15 @@ This project focuses on comparing the performance of three different vectorisati
 ![RF Radar](plots/RF_radar.png) 
 
 ## 01_data_exploration_and_preprocessing.ipynb
-### Objective: Explore and preprocess the dataset to prepare it for further analysis.
+### Objective: Explore and preprocess the dataset for further analysis.
 - Contents:
   - Data Loading: Import and inspect the dataset.
-  - Class Distribution: Analyze the distribution of target labels.
-  - Data Cleaning: Handle missing values, remove usernames, and preprocess text (e.g., lowercasing, tokenization).
+  - Class Distribution: Analyse the distribution of target labels.
+  - Data Cleaning: Handle missing values, remove usernames, and preprocess text (e.g., lowercasing, tokenisation).
 ## 02_feature_extraction.ipynb
-### Objective: Generate feature representations using various vectorization techniques.
+### Objective: Generate feature representations using various vectorisation techniques.
 - Contents:
-  - TF-IDF Vectorization: Compute TF-IDF features for the text data.
+  - TF-IDF Vectorisation: Compute TF-IDF features for the text data.
   - Word2Vec Embeddings: Train Word2Vec and generate sentence-level embeddings.
   - Sentence Transformers: Extract embeddings using pre-trained Sentence Transformer models.
   - Feature Storage: Save generated feature matrices for model training and evaluation.
@@ -58,7 +58,7 @@ This project focuses on comparing the performance of three different vectorisati
   - Evaluation Metrics: Compute accuracy, precision, recall, and F1-score.
   - Results Storage: Save structured performance results for further analysis.
 ## 04_results_visualisation_and_interpretation.ipynb
-### Objective: Visualize and interpret model performance across different vectorization techniques.
+### Objective: Visualize and interpret model performance across different vectorisation techniques.
 - Contents:
   - Radar Charts: Compare classifier performance across different feature representations.
   - Heatmaps: Visualize performance metrics (accuracy, precision, recall, F1-score).
